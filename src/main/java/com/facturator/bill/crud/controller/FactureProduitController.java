@@ -46,7 +46,7 @@ import com.facturator.bill.crud.service.FactureProduitService;
 		return fp;
 	}
 	
-	@DeleteMapping("/listecustomer/{cNumero}")
+	@DeleteMapping("/listefactureproduit/{cNumero}")
 	public void deleteBillProduct(@PathVariable("fcId") int id) {
 		fps.deleteBillProduct(id);
 	}

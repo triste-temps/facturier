@@ -17,6 +17,7 @@ public class FactureProduit {
 	
 	@GeneratedValue(strategy=GenerationType.IDENTITY)
 	@Id	
+	@JoinColumn(name="fc_id")
 	private int fcId;
 	
 	@ManyToOne
@@ -79,4 +80,5 @@ public class FactureProduit {
 				+ ", fcQuantite=" + fcQuantite + "]";
 	}
 
+	
 }
