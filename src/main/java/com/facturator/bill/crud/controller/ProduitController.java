@@ -38,7 +38,7 @@ public List<Produit> allProduct(){
 	return listAllProduct;
 }
 	
-@GetMapping("/listeproduit/{}pReference}")
+@GetMapping("/listeproduit/{pReference}")
 
 public Produit findProduct(@PathVariable int pReference) {
 	Produit newProduct = ps.findProduct(pReference);

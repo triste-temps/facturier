@@ -47,7 +47,7 @@ public class FactureController {
 		return fac;
 	}
 	
-	@DeleteMapping("/listecustomer/{fNumero}")
+	@DeleteMapping("/listefacture/{fNumero}")
 	public void deleteBill(@PathVariable("fNumero") int id) {
 		fs.deleteBill(id);
 	}
